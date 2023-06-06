@@ -25,12 +25,12 @@ main()
   show_refresh=$(get_tmux_option "@dracula-refresh-rate" 5)
   time_format=$(get_tmux_option "@dracula-time-format" "")
   show_kubernetes_context_label=$(get_tmux_option "@dracula-kubernetes-context-label" "")
-  IFS=' ' read -r -a plugins <<< $(get_tmux_option "@dracula-plugins" "battery network weather")
+  IFS=' ' read -r -a plugins <<< $(get_tmux_option "@dracula-plugins" "")
   show_empty_plugins=$(get_tmux_option "@dracula-show-empty-plugins" true)
 
   # Dracula Color Pallette
   white='#f8f8f2'
-  gray='#44475a'
+  gray='#282A36'
   dark_gray='#282a36'
   light_purple='#bd93f9'
   dark_purple='#6272a4'
